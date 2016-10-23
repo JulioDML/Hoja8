@@ -153,16 +153,18 @@ public class GUI extends JFrame {
 								    	textArea.append("--Pacientes, por registro-- \n");
 										textArea.append(contenido);
 										manejadora.asignacion(textField.getText());
+										textArea.append("\n");
 										textArea.append("--Pacientes, por prioridad-- \n");
 										
 										textArea.append(manejadora.desplegar());
 										textField.setEditable(false);
 								    }
 								    else if (imp.equals("Java F.C.")){
-								    	textArea.append("--Pacientes en orden de registro-- \n");
+								    	textArea.append("--Pacientes, por registro-- \n");
 								    	textArea.append(contenido);
 								    	manejadora.asignacion2(textField.getText());
-								    	textArea.append("--Pacientes en orden de prioridad que deben ser atendidos-- \n");
+									textArea.append("\n");
+								    	textArea.append("--Pacientes, por prioridad-- \n");
 										
 										textArea.append(manejadora.desplegar2());
 										textField.setEditable(false);
