@@ -53,15 +53,15 @@ public class GUI extends JFrame {
 
 	private void initialize(){
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(300, 150, 700, 500);
+		setBounds(300, 150, 800, 550);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 
 		lblNewLabel = new JLabel("Pacientes por prioridad");
-		lblNewLabel.setFont(new Font("Tw Cen MT", Font.PLAIN, 18));
+		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 24));
 		lblNewLabel_1 = new JLabel("Ingrese archivo de datos del paciente:");
-		lblPacientesEnOrden = new JLabel("Pacientes registrados / Pacientes por prioridad");
+		lblPacientesEnOrden = new JLabel("Pacientes registrados // Pacientes por prioridad");
 
 		textField = new JTextField();
 		textField.setColumns(10);
