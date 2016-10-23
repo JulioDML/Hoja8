@@ -2,7 +2,7 @@
 // Hoja de Trabajo 8
 
 // Julio Mérida  15242
-// Axel Mazariegos  
+// Axel Mazariegos  131212
 // Gustavo Orellana 15073
 
 public class Paciente  implements Comparable<Paciente>{
@@ -12,6 +12,7 @@ public class Paciente  implements Comparable<Paciente>{
 	private String prioridad;
 	
 	// Constructor para objetos tipo paciente
+	
 	public Paciente(String nombre, String estado, String prioridad) {
 		super();
 		this.nombre = nombre;
@@ -47,12 +48,14 @@ public class Paciente  implements Comparable<Paciente>{
 	}
 
 	// Metodo para realizar comparacion
+	
 	@Override
 	public int compareTo(Paciente arg0) {
 		return this.prioridad.compareTo(arg0.prioridad);
 	}
 
         // To String para datos del paciente
+	
 	@Override
 	public String toString() {
 		return nombre + "," + estado + "," + prioridad;
