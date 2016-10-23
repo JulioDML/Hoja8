@@ -28,7 +28,7 @@ public class GUI extends JFrame {
 	private JTextArea textArea;
 	private GroupLayout gl_contentPane;
 	private JScrollPane scrollPane;
-	  public static final String[] opciones = { "VectorHeap", "JFC" };
+	  public static final String[] opciones = { "VectorHeap", "Java F.C." };
 	/**
 	 * Launch the application.
 	 * @param args argumentos de la linea de comandos
@@ -158,7 +158,7 @@ public class GUI extends JFrame {
 										textArea.append(manejadora.desplegar());
 										textField.setEditable(false);
 								    }
-								    else if (imp.equals("JFC")){
+								    else if (imp.equals("Java F.C.")){
 								    	textArea.append("--Pacientes en orden de registro-- \n");
 								    	textArea.append(contenido);
 								    	manejadora.asignacion2(textField.getText());
