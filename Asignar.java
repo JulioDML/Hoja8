@@ -106,8 +106,8 @@ public class Asignar {
 			parts = array.get(conta).split(",");
 			paciente = new Paciente(parts[0],parts[1],parts[2]);
 			cola2.add(paciente);
-			largo--;
-			conta++;
+			largo --;
+			conta ++;
 		}
 	}
 	// Devuelve todos los pacientes registrados en la cola de prioridad usando VectorHeap
