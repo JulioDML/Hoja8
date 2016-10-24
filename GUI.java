@@ -53,15 +53,15 @@ public class GUI extends JFrame {
 
 	private void initialize(){
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(300, 150, 800, 550);
+		setBounds(300, 150, 700, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 
 		lblNewLabel = new JLabel("Pacientes por prioridad");
-		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 24));
+		lblNewLabel.setFont(new Font("Tw Cen MT", Font.PLAIN, 18));
 		lblNewLabel_1 = new JLabel("Ingrese archivo de datos del paciente:");
-		lblPacientesEnOrden = new JLabel("Pacientes registrados // Pacientes por prioridad");
+		lblPacientesEnOrden = new JLabel("Pacientes registrados / Pacientes por prioridad");
 
 		textField = new JTextField();
 		textField.setColumns(10);
@@ -153,18 +153,16 @@ public class GUI extends JFrame {
 								    	textArea.append("--Pacientes, por registro-- \n");
 										textArea.append(contenido);
 										manejadora.asignacion(textField.getText());
-										textArea.append("\n");
 										textArea.append("--Pacientes, por prioridad-- \n");
 										
 										textArea.append(manejadora.desplegar());
 										textField.setEditable(false);
 								    }
 								    else if (imp.equals("Java F.C.")){
-								    	textArea.append("--Pacientes, por registro-- \n");
+								    	textArea.append("--Pacientes en orden de registro-- \n");
 								    	textArea.append(contenido);
 								    	manejadora.asignacion2(textField.getText());
-									textArea.append("\n");
-								    	textArea.append("--Pacientes, por prioridad-- \n");
+								    	textArea.append("--Pacientes en orden de prioridad que deben ser atendidos-- \n");
 										
 										textArea.append(manejadora.desplegar2());
 										textField.setEditable(false);
