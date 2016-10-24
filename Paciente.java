@@ -61,3 +61,4 @@ public class Paciente  implements Comparable<Paciente>{
 		return nombre + "," + estado + "," + prioridad;
 	}
 }
+
